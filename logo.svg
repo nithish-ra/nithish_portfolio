@@ -1,0 +1,26 @@
+<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="border-g" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00d4ff"/>
+      <stop offset="1" stop-color="#f5c842"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="40" height="40" rx="8" fill="#0a0f1e"/>
+
+  <!-- Gradient border -->
+  <rect x=".75" y=".75" width="38.5" height="38.5" rx="7.5"
+        stroke="url(#border-g)" stroke-width="1.5"/>
+
+  <!-- NRA — N in cyan, RA in gold, all same size -->
+  <text font-family="'Courier New', Courier, monospace"
+        font-size="19" font-weight="700" y="27">
+    <tspan fill="#00d4ff" x="3">N</tspan>
+    <tspan fill="#f5c842">RA</tspan>
+  </text>
+
+  <!-- Bottom accent -->
+  <rect x="3" y="34" width="34" height="1.5" rx=".75"
+        fill="url(#border-g)" opacity=".4"/>
+</svg>

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nithish Ra — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="icon" type="image/svg+xml" href="logo.png"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<!-- ═══════════ NAV ═══════════ -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <img src="logo.png" alt="NRA logo" class="nav-logo-mark"/>
+    <span class="nav-logo-text">Nithish Ra</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#activities">Activities</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="mailto:nithish2370014@ssn.edu.in" class="nav-cta">Contact</a>
+    <button class="nav-burger" id="nav-burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- mobile drawer -->
+<div class="nav-mobile" id="nav-mobile">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#activities">Activities</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section id="hero">
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- text -->
+      <div>
+        <p class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          Available for opportunities
+        </p>
+        <h1>
+          <span class="first">Nithish</span>
+          <span class="last">Ra</span>
+        </h1>
+        <p class="hero-role">Software Developer &amp; AI Researcher &nbsp;·&nbsp; Chennai, TN</p>
+        <p class="hero-desc">Motivated software developer with strong foundations in algorithms, machine learning, image processing, cybersecurity, and modern web technologies — building full-stack applications and intelligent systems.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary"><i class="fa-solid fa-code"></i> View Projects</a>
+          <a href="mailto:nithish2370014@ssn.edu.in" class="btn-ghost"><i class="fa-regular fa-envelope"></i> Get in Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/nithish-ra" target="_blank" class="hero-social" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/nithish-ra/" target="_blank" class="hero-social" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://leetcode.com/u/nithish_ra_1906/" target="_blank" class="hero-social" title="LeetCode"><i class="fa-solid fa-code"></i></a>
+          <a href="https://github.com/nithish-ra/certificates" target="_blank" class="hero-social" title="Certificates"><i class="fa-solid fa-certificate"></i></a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="stat-val">8.52</div>
+            <div class="stat-label">CGPA</div>
+          </div>
+          <div>
+            <div class="stat-val">3</div>
+            <div class="stat-label">Internships</div>
+          </div>
+          <div>
+            <div class="stat-val">4</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div>
+            <div class="stat-val">Top 1%</div>
+            <div class="stat-label">NPTEL Cyber</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- photo -->
+      <div class="hero-photo-wrap">
+        <div class="photo-ring">
+          <div class="photo-ring-inner">
+            <img src="photo.png" alt="Nithish Ra" class="hero-photo"/>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<section id="about">
+  <div class="container">
+    <p class="section-label fade-up">Who I Am</p>
+    <h2 class="section-title fade-up">Building at the <em>intersection</em><br/>of AI &amp; Engineering</h2>
+    <div class="about-grid">
+      <div class="about-text fade-up">
+        <p>I'm a <strong>4th-year Integrated M.Tech student</strong> at SSN College of Engineering, Chennai, pursuing Computer Science Engineering with a CGPA of 8.52. My work spans full-stack development, machine learning pipelines, cybersecurity research, and conversational AI systems.</p>
+        <p>I've interned at <strong>DriveThruData LLP</strong> building AI voice agents, conducted research at <strong>IIITDM</strong> on HPC and security, and worked with an Ed-Tech startup on digital operations and content workflows.</p>
+        <p>Beyond code, I'm a committed cricketer — <strong>Captain of the SSN College Cricket Team</strong> and a former Tamil Nadu representative across U-12 to U-19 age groups. Leadership on the field translates directly to how I approach team projects and pressure situations.</p>
+        <div class="about-highlights">
+          <div class="highlight-row"><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu, India</div>
+          <div class="highlight-row"><i class="fa-solid fa-envelope"></i> nithish2370014@ssn.edu.in</div>
+          <div class="highlight-row"><i class="fa-solid fa-phone"></i> +91 9344991313</div>
+          <div class="highlight-row"><i class="fa-brands fa-github"></i> github.com/nithish-ra</div>
+        </div>
+      </div>
+      <div>
+        <div class="interest-grid animated-tiles">
+          <div class="int-tile"><i class="fa-solid fa-bolt"></i> Machine Learning</div>
+          <div class="int-tile"><i class="fa-solid fa-lock"></i> Cybersecurity</div>
+          <div class="int-tile"><i class="fa-solid fa-eye"></i> Image Processing</div>
+          <div class="int-tile"><i class="fa-solid fa-globe"></i> Web Development</div>
+          <div class="int-tile"><i class="fa-solid fa-microchip"></i> AI / Voice Agents</div>
+          <div class="int-tile"><i class="fa-solid fa-chart-column"></i> Big Data Pipelines</div>
+          <div class="int-tile"><i class="fa-solid fa-server"></i> Distributed Systems</div>
+          <div class="int-tile"><i class="fa-solid fa-baseball-bat-ball"></i> Cricket &amp; Leadership</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ EDUCATION ═══════════ -->
+<section id="education">
+  <div class="container">
+    <p class="section-label fade-up">Academic</p>
+    <h2 class="section-title fade-up"><em>Education</em> Timeline</h2>
+    <div class="edu-timeline">
+
+      <!-- SSN -->
+      <div class="edu-tl-item current fade-up">
+        <div class="edu-tl-dot"></div>
+        <div class="edu-tl-card">
+          <div class="edu-tl-header">
+            <div>
+              <div class="edu-tl-school">SSN College of Engineering</div>
+              <div class="edu-tl-degree">Integrated M.Tech (5-Year) · Computer Science &amp; Engineering</div>
+            </div>
+            <span class="edu-tl-period"><i class="fa-regular fa-calendar"></i> 2023 – 2028</span>
+          </div>
+          <div class="edu-tl-meta">
+            <span class="edu-tag">CGPA: 8.52</span>
+            <span class="edu-tag current-badge">4th Year · Semester 7</span>
+            <span class="edu-tag gold">Networks Club</span>
+            <span class="edu-tag gold">Cricket Team Captain</span>
+          </div>
+          <div class="edu-progress">
+            <div class="edu-prog-label">
+              <span>Year 4 of 5</span>
+              <span>80%</span>
+            </div>
+            <div class="edu-prog-track">
+              <div class="edu-prog-fill" data-width="80%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAV -->
+      <div class="edu-tl-item fade-up">
+        <div class="edu-tl-dot"></div>
+        <div class="edu-tl-card">
+          <div class="edu-tl-header">
+            <div>
+              <div class="edu-tl-school">DAV Public School, Chennai</div>
+              <div class="edu-tl-degree">Higher Secondary Education · Science Stream</div>
+            </div>
+            <span class="edu-tl-period"><i class="fa-regular fa-calendar"></i> Graduated 2023</span>
+          </div>
+          <div class="edu-tl-meta">
+            <span class="edu-tag">Grade 12: 94%</span>
+            <span class="edu-tag">Grade 10: 93%</span>
+            <span class="edu-tag gold">Student of the Class</span>
+            <span class="edu-tag gold">Cricket Team Captain</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ EXPERIENCE ═══════════ -->
+<section id="experience">
+  <div class="container">
+    <p class="section-label fade-up">Career</p>
+    <h2 class="section-title fade-up">Work <em>Experience</em></h2>
+    <div class="timeline">
+
+      <div class="tl-item fade-up">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div>
+              <div class="tl-role">AI Software Engineer Trainee Intern</div>
+              <div class="tl-company">DriveThruData LLP · Chennai</div>
+            </div>
+            <span class="tl-period"><i class="fa-regular fa-calendar"></i> 05/2026 – 07/2026</span>
+          </div>
+          <p class="tl-desc">Worked on AI-based voice appointment booking agents and automation workflows using <strong style="color:var(--text)">Gemini API &amp; Gradio</strong>. Built and tested scalable intelligent agent prototypes integrating real-time conversational interaction pipelines.</p>
+          <div class="project-tags" style="margin-top:.85rem">
+            <span class="tag">Gemini API</span>
+            <span class="tag">Gradio</span>
+            <span class="tag">Conversational AI</span>
+            <span class="tag green">Voice Agents</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item fade-up">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div>
+              <div class="tl-role">Research Intern</div>
+              <div class="tl-company">IIITDM Kancheepuram · Chennai</div>
+            </div>
+            <span class="tl-period"><i class="fa-regular fa-calendar"></i> 05/2025 – 07/2025</span>
+          </div>
+          <p class="tl-desc">Contributed to research in <strong style="color:var(--text)">high-performance computing and cybersecurity</strong> — benchmarking, literature review, and prototyping. Built a Java-based vulnerability parser from scratch and collaborated with PhD scholars on real-world security problems.</p>
+          <div class="project-tags" style="margin-top:.85rem">
+            <span class="tag">HPC</span>
+            <span class="tag">Cybersecurity</span>
+            <span class="tag">Java</span>
+            <span class="tag rose">Vulnerability Analysis</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item fade-up">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div>
+              <div class="tl-role">Intern</div>
+              <div class="tl-company">Learning Room (Ed-Tech) · Chennai</div>
+            </div>
+            <span class="tl-period"><i class="fa-regular fa-calendar"></i> 11/2023 – 12/2024</span>
+          </div>
+          <p class="tl-desc">Supported startup operations, digital marketing, poster design, content creation, and real-time coordination tasks. Participated in idea innovation, design thinking sessions, and Canva-based creative workflows.</p>
+          <div class="project-tags" style="margin-top:.85rem">
+            <span class="tag gold">Digital Marketing</span>
+            <span class="tag gold">Content Creation</span>
+            <span class="tag">Design Thinking</span>
+            <span class="tag">Canva</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PROJECTS ═══════════ -->
+<section id="projects">
+  <div class="container">
+    <p class="section-label fade-up">Work</p>
+    <h2 class="section-title fade-up">Featured <em>Projects</em></h2>
+    <div class="projects-grid">
+
+      <div class="project-card fade-up">
+        <div class="project-num">01 / SECURITY</div>
+        <div class="project-name">Java Vulnerability Detection Tool</div>
+        <div class="project-subtitle">Static &amp; Dynamic Analysis</div>
+        <p class="project-desc">A Java security tool combining static parsing and dynamic runtime analysis to detect vulnerabilities and suggest secure code fixes. Built from scratch during the IIITDM research internship.</p>
+        <div class="project-tags">
+          <span class="tag">Java</span>
+          <span class="tag rose">Static Analysis</span>
+          <span class="tag rose">Dynamic Analysis</span>
+          <span class="tag">Cybersecurity</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-up">
+        <div class="project-num">02 / ML + CV</div>
+        <div class="project-name">Vehicle &amp; Weather Detection</div>
+        <div class="project-subtitle">ML + Image Processing Pipeline</div>
+        <p class="project-desc">Full image-processing pipeline with Gaussian blur, thresholding, segmentation, ROI extraction, and ML classifiers for accurate vehicle and weather detection in varied real-world conditions.</p>
+        <div class="project-tags">
+          <span class="tag">OpenCV</span>
+          <span class="tag green">Scikit-Learn</span>
+          <span class="tag green">Image Processing</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-up">
+        <div class="project-num">03 / FULLSTACK</div>
+        <div class="project-name">Lost &amp; Found Dashboard</div>
+        <div class="project-subtitle">Vue.js + REST API</div>
+        <p class="project-desc">Dashboard for reporting and retrieving lost/found items with form validation, advanced search filters, REST APIs, and modular Vue.js UI components for a seamless user experience.</p>
+        <div class="project-tags">
+          <span class="tag">Vue.js</span>
+          <span class="tag">REST API</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag gold">UI/UX</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-up">
+        <div class="project-num">04 / BIG DATA</div>
+        <div class="project-name">Flight Delay Prediction Pipeline</div>
+        <div class="project-subtitle">Real-Time ML Streaming</div>
+        <p class="project-desc">Real-time ML streaming pipeline using Kafka for ingestion, Spark for processing, MongoDB for storage, and Streamlit for a live prediction tracking dashboard with interactive visualizations.</p>
+        <div class="project-tags">
+          <span class="tag">Kafka</span>
+          <span class="tag green">Apache Spark</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag green">Streamlit</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SKILLS ═══════════ -->
+<section id="skills">
+  <div class="container">
+    <p class="section-label fade-up">Toolkit</p>
+    <h2 class="section-title fade-up">Skills &amp; <em>Technologies</em></h2>
+    <div class="skills-grid">
+
+      <div class="skill-group fade-up">
+        <div class="skill-group-icon cyan"><i class="fa-solid fa-code"></i></div>
+        <div class="skill-group-title">Programming</div>
+        <div class="skill-chips">
+          <span class="chip">Python</span><span class="chip">Java</span>
+          <span class="chip">C</span><span class="chip">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-up">
+        <div class="skill-group-icon green"><i class="fa-solid fa-brain"></i></div>
+        <div class="skill-group-title">Machine Learning</div>
+        <div class="skill-chips">
+          <span class="chip">Scikit-Learn</span><span class="chip">XGBoost</span>
+          <span class="chip">Random Forest</span><span class="chip">SVM</span>
+          <span class="chip">KNN</span><span class="chip">PCA</span>
+          <span class="chip">AdaBoost</span><span class="chip">Gradient Boosting</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-up">
+        <div class="skill-group-icon rose"><i class="fa-solid fa-robot"></i></div>
+        <div class="skill-group-title">Deep Learning &amp; AI</div>
+        <div class="skill-chips">
+          <span class="chip">CycleGANs</span><span class="chip">CNN</span>
+          <span class="chip">NLP</span><span class="chip">Firebase</span>
+          <span class="chip">IoT</span><span class="chip">Gemini API</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-up">
+        <div class="skill-group-icon cyan"><i class="fa-solid fa-eye"></i></div>
+        <div class="skill-group-title">Image Processing</div>
+        <div class="skill-chips">
+          <span class="chip">OpenCV</span><span class="chip">Thresholding</span>
+          <span class="chip">Gaussian Blur</span><span class="chip">Segmentation</span>
+          <span class="chip">ROI Extraction</span><span class="chip">Feature Extraction</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-up">
+        <div class="skill-group-icon gold"><i class="fa-solid fa-globe"></i></div>
+        <div class="skill-group-title">Web Development</div>
+        <div class="skill-chips">
+          <span class="chip">Spring Boot</span><span class="chip">Vue.js</span>
+          <span class="chip">Flask</span><span class="chip">REST APIs</span>
+          <span class="chip">HTML/CSS/JS</span><span class="chip">Servlets</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-up">
+        <div class="skill-group-icon green"><i class="fa-solid fa-database"></i></div>
+        <div class="skill-group-title">Big Data &amp; Databases</div>
+        <div class="skill-chips">
+          <span class="chip">Kafka</span><span class="chip">Spark</span>
+          <span class="chip">Hadoop</span><span class="chip">MongoDB</span>
+          <span class="chip">Redis</span><span class="chip">Cassandra</span>
+          <span class="chip">Neo4j</span><span class="chip">MySQL</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-up">
+        <div class="skill-group-icon rose"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="skill-group-title">Core CS &amp; Security</div>
+        <div class="skill-chips">
+          <span class="chip">OS</span><span class="chip">Computer Networks</span>
+          <span class="chip">Distributed Systems</span><span class="chip">OOP</span>
+          <span class="chip">Algorithms</span><span class="chip">Data Structures</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-up">
+        <div class="skill-group-icon cyan"><i class="fa-solid fa-wrench"></i></div>
+        <div class="skill-group-title">Tools &amp; Libraries</div>
+        <div class="skill-chips">
+          <span class="chip">Git</span><span class="chip">Docker</span>
+          <span class="chip">Postman</span><span class="chip">Wireshark</span>
+          <span class="chip">NS-3</span><span class="chip">Pandas</span>
+          <span class="chip">NumPy</span><span class="chip">Matplotlib</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-up">
+        <div class="skill-group-icon gold"><i class="fa-solid fa-users"></i></div>
+        <div class="skill-group-title">Soft Skills</div>
+        <div class="skill-chips">
+          <span class="chip">Leadership</span><span class="chip">Teamwork</span>
+          <span class="chip">Communication</span><span class="chip">Time Management</span>
+          <span class="chip">Analytical Thinking</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CERTIFICATIONS ═══════════ -->
+<section id="certifications">
+  <div class="container">
+    <p class="section-label fade-up">Learning</p>
+    <h2 class="section-title fade-up">Certifications &amp; <em>Workshops</em></h2>
+
+    <div class="cert-gallery">
+
+      <div class="cert-img-card fade-up" onclick="openLightbox('certs/cyber.jpg')">
+        <div class="cert-img-wrap">
+          <img src="certs/cyber.jpg" alt="NPTEL Cybersecurity Practitioner"/>
+        </div>
+        <div class="cert-img-label">
+          <div class="cert-img-name">NPTEL Cybersecurity Practitioner</div>
+          <div class="cert-img-meta">
+            <span class="cert-img-issuer">NPTEL · IIT</span>
+            <span class="cert-img-badge">Top 1%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-img-card fade-up" onclick="openLightbox('certs/ai-mgmt.jpg')">
+        <div class="cert-img-wrap">
+          <img src="certs/ai-mgmt.jpg" alt="NPTEL AI for Management"/>
+        </div>
+        <div class="cert-img-label">
+          <div class="cert-img-name">NPTEL AI for Management</div>
+          <div class="cert-img-meta">
+            <span class="cert-img-issuer">NPTEL · IIT</span>
+            <span class="cert-img-badge">Top 5%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-img-card fade-up" onclick="openLightbox('certs/affective.jpg')">
+        <div class="cert-img-wrap">
+          <img src="certs/affective.jpg" alt="NPTEL Affective Computing"/>
+        </div>
+        <div class="cert-img-label">
+          <div class="cert-img-name">NPTEL Affective Computing</div>
+          <div class="cert-img-meta">
+            <span class="cert-img-issuer">NPTEL · IIT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-img-card fade-up" onclick="openLightbox('certs/flutter.jpg')">
+        <div class="cert-img-wrap">
+          <img src="certs/flutter.jpg" alt="Flutter App Development"/>
+        </div>
+        <div class="cert-img-label">
+          <div class="cert-img-name">Flutter App Development</div>
+          <div class="cert-img-meta">
+            <span class="cert-img-issuer">Certified Course</span>
+            <span class="cert-img-badge green">Certified</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-img-card fade-up" onclick="openLightbox('certs/iiitdm.jpg')">
+        <div class="cert-img-wrap">
+          <img src="certs/iiitdm.jpg" alt="IIITDM Internship Certificate"/>
+        </div>
+        <div class="cert-img-label">
+          <div class="cert-img-name">Internship Certificate</div>
+          <div class="cert-img-meta">
+            <span class="cert-img-issuer">IIITDM Kancheepuram</span>
+            <span class="cert-img-badge green">Research</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-img-card fade-up" onclick="openLightbox('certs/canva.jpg')">
+        <div class="cert-img-wrap">
+          <img src="certs/canva.jpg" alt="Canva Internship Certificate"/>
+        </div>
+        <div class="cert-img-label">
+          <div class="cert-img-name">Canva Editing &amp; Tailoring</div>
+          <div class="cert-img-meta">
+            <span class="cert-img-issuer">Learning Room · Ed-Tech</span>
+            <span class="cert-img-badge green">Certified</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-img-card fade-up" onclick="openLightbox('certs/drivethrucata.jpg')">
+        <div class="cert-img-wrap">
+          <img src="certs/drivethrucata.jpg" alt="DriveThruData Offer Letter"/>
+        </div>
+        <div class="cert-img-label">
+          <div class="cert-img-name">AI Engineer Offer Letter</div>
+          <div class="cert-img-meta">
+            <span class="cert-img-issuer">DriveThruData LLP</span>
+            <span class="cert-img-badge green">Internship</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="workshops-wrap fade-up">
+      <h3>Workshops Attended</h3>
+      <div class="workshop-chips">
+        <span class="workshop-chip">Big Stream 24</span>
+        <span class="workshop-chip">Web Development Capstone</span>
+        <span class="workshop-chip">Vibe Coding Bootcamp</span>
+        <span class="workshop-chip">Flutter App Development</span>
+        <span class="workshop-chip">Docker &amp; Kubernetes</span>
+        <span class="workshop-chip">NS-3 Network Simulator</span>
+        <span class="workshop-chip">UI/UX Design</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- lightbox -->
+<div class="cert-lightbox" id="cert-lightbox" onclick="closeLightbox()">
+  <button class="cert-lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightbox-img" src="" alt="Certificate"/>
+</div>
+
+<!-- ═══════════ CLUB ACTIVITIES ═══════════ -->
+<section id="activities">
+  <div class="container">
+    <p class="section-label fade-up">Campus Life</p>
+    <h2 class="section-title fade-up">Club &amp; <em>Activities</em></h2>
+    <div class="activities-grid">
+
+      <div class="activity-card fade-up">
+        <div class="activity-card-icon blue"><i class="fa-solid fa-network-wired"></i></div>
+        <span class="activity-badge member">Member</span>
+        <div class="activity-title">SSN Networks Club</div>
+        <div class="activity-org">SSN College of Engineering · Chennai</div>
+        <p class="activity-desc">Active member of the Networks Club at SSN, participating in workshops, technical talks, and hands-on labs covering computer networking, protocols, and simulation tools like NS-3.</p>
+        <div class="activity-tags">
+          <span class="tag">Networking</span>
+          <span class="tag">NS-3</span>
+          <span class="tag">Wireshark</span>
+        </div>
+      </div>
+
+      <div class="activity-card fade-up">
+        <div class="activity-card-icon"><i class="fa-solid fa-baseball-bat-ball"></i></div>
+        <span class="activity-badge captain">Captain</span>
+        <div class="activity-title">SSN College Cricket Team</div>
+        <div class="activity-org">SSN College of Engineering · Chennai</div>
+        <p class="activity-desc">Captaining the college cricket team in inter-college tournaments. Responsible for team strategy, player coordination, and leading by example as the primary wicketkeeper-batsman.</p>
+        <div class="activity-tags">
+          <span class="tag gold">Leadership</span>
+          <span class="tag gold">Inter-College</span>
+          <span class="tag gold">Wicketkeeper</span>
+        </div>
+      </div>
+
+      <div class="activity-card fade-up">
+        <div class="activity-card-icon"><i class="fa-solid fa-trophy"></i></div>
+        <span class="activity-badge captain">Former Captain</span>
+        <div class="activity-title">DAV Public School Cricket Team</div>
+        <div class="activity-org">DAV Public School · Chennai</div>
+        <p class="activity-desc">Captained the school cricket team in inter-school competitions. Also represented Tamil Nadu across U-12 to U-19 age groups in the TNCA League 3rd Division — a standout career from a young age.</p>
+        <div class="activity-tags">
+          <span class="tag gold">Tamil Nadu Rep.</span>
+          <span class="tag gold">TNCA League</span>
+          <span class="tag gold">U-12 to U-19</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ACHIEVEMENTS ═══════════ -->
+<section id="achievements">
+  <div class="container">
+    <p class="section-label fade-up">Recognition</p>
+    <h2 class="section-title fade-up">Achievements &amp; <em>Extracurriculars</em></h2>
+    <div class="achievements-grid jumping-cards">
+
+      <div class="achieve-card fade-up">
+        <div class="achieve-icon"><i class="fa-solid fa-trophy"></i></div>
+        <div>
+          <div class="achieve-title">Student of the Class Award</div>
+          <div class="achieve-desc">Awarded at DAV Public School, Chennai — recognizing academic excellence and leadership contributions throughout schooling.</div>
+        </div>
+      </div>
+
+      <div class="achieve-card fade-up">
+        <div class="achieve-icon"><i class="fa-solid fa-baseball-bat-ball"></i></div>
+        <div>
+          <div class="achieve-title">School &amp; College Cricket Team Captain</div>
+          <div class="achieve-desc">Captain of both DAV Public School and SSN College cricket teams — leading squads in competitive inter-college and inter-school fixtures.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cricket-banner fade-up">
+      <div class="cricket-emoji"><i class="fa-solid fa-baseball-bat-ball"></i></div>
+      <div class="cricket-banner-text">
+        <h3 class="shimmer-title">Tamil Nadu Cricket Representative</h3>
+        <p>Primary Wicketkeeper-Batsman · TNCA League 3rd Division</p>
+        <div class="cricket-levels">
+          <span class="cricket-level">U-12</span>
+          <span class="cricket-level">U-14</span>
+          <span class="cricket-level">U-16</span>
+          <span class="cricket-level">U-19</span>
+          <span class="cricket-level">TNCA League</span>
+        </div>
+      </div>
+      <a href="https://youtu.be/eijEw3jorwg?si=a_zJuYBm0g139iBV" target="_blank" class="interview-link">
+        <i class="fa-brands fa-youtube"></i> Watch Interview
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CONTACT ═══════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <p class="section-label fade-up" style="justify-content:center">Let's Connect</p>
+      <h2 class="section-title fade-up">Got an <em>opportunity</em>?<br/>Let's talk.</h2>
+      <p class="contact-sub fade-up">I'm open to internships, research collaborations, and full-time roles. Whether it's AI, backend systems, or data engineering — reach out and let's build something great.</p>
+      <a href="mailto:nithish2370014@ssn.edu.in" class="contact-email fade-up">
+        <i class="fa-regular fa-envelope"></i>
+        nithish2370014@ssn.edu.in
+      </a>
+      <div class="contact-socials fade-up">
+        <a href="https://github.com/nithish-ra" target="_blank" class="contact-social" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nithish-ra/" target="_blank" class="contact-social" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://leetcode.com/u/nithish_ra_1906/" target="_blank" class="contact-social" title="LeetCode"><i class="fa-solid fa-code"></i></a>
+        <a href="tel:+919344991313" class="contact-social" title="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <a href="#hero" class="footer-brand">
+        <img src="logo.png" alt="NRA" class="footer-logo-mark"/>
+        <span class="footer-copy">© 2026 <span>Nithish Ra</span> · Chennai, TN</span>
+      </a>
+      <span class="footer-copy" style="font-size:.62rem">Built with precision &amp; purpose</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
